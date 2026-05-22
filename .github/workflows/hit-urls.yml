@@ -1,0 +1,17 @@
+name: Hit URLs every 4 hours
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'
+  workflow_dispatch:        # lets you trigger it manually too
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - run: node index.js
