@@ -2,10 +2,10 @@ import fetch from "node-fetch";
 
 // ── Config: add your URLs here ─────────────────────────────────────────────
 const URLS = [
-  { url: "http://feeds.timesnownews.com/feeds/eng/category?seopath=videos/times-now",   method: "GET" },
-  { url: "http://feeds.timesnownews.com/feeds/eng/category?seopath=videos/et-now",   method: "GET" },
-  { url: "http://feeds.timesnownews.com/feeds/eng/category?seopath=videos/times-drive", method: "GET" },
-  { url: "http://feeds.timesnownews.com/feeds/eng/category?seopath=videos/mirror-now",  method: "GET" },
+  { url: "https://feeds.timesnownews.com/feeds/eng/category?seopath=videos/times-now",   method: "GET" },
+  { url: "https://feeds.timesnownews.com/feeds/eng/category?seopath=videos/et-now",   method: "GET" },
+  { url: "https://feeds.timesnownews.com/feeds/eng/category?seopath=videos/times-drive", method: "GET" },
+  { url: "https://feeds.timesnownews.com/feeds/eng/category?seopath=videos/mirror-now",  method: "GET" },
 ];
 
 const INTERVAL_HOURS = 4;
